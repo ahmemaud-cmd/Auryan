@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Orian — لعبة صغيرة متعددة اللاعبين. انضم، اختر شخصيتك وحرك بالموس عبر خريطة تفاعلية.">
+    <meta name="robots" content="index,follow">
+    <title>أوريان / Auryan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- شاشة تسجيل الدخول -->
+<div id="loginScreen" class="modal" role="dialog" aria-modal="true">
+  <div class="modal-inner">
+    <h3>تسجيل الدخول</h3>
+    <input id="emailLogin" type="email" placeholder="البريد الإلكتروني" />
+    <input id="passwordLogin" type="password" placeholder="كلمة المرور" />
+    <div style="margin-top:8px;text-align:center">
+      <button id="loginNowBtn" class="btn">تسجيل دخول</button>
+    </div>
+    <p style="font-size:13px;color:#9ca3af;margin-top:8px">أو سجّل بسرعة عبر:</p>
+    <div style="display:flex;gap:8px;justify-content:center">
+      <a id="googleAuthBtn" class="btn" href="/auth/google">Gmail</a>
+      <a id="facebookAuthBtn" class="btn" href="/auth/facebook">Facebook</a>
+    </div>
+  </div>
+</div>
+
+<!-- واجهة اللعبة -->
+<div id="app" class="layout" style="display:none">
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <aside id="chat" class="chat">
+        <div id="chatLog" class="chat-log" aria-live="polite"></div>
+        <div class="chat-input">
+            <input id="chatInput" type="text" placeholder="اكتب رسالة..." />
+            <button id="chatSend">إرسال</button>
+        </div>
+    </aside>
+</div>
+
+<!-- socket.io -->
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
+<button id="googleBtn">دخول بجوجل</button>
+<script>
+  document.getElementById('googleBtn').onclick = () => {
+    window.location.href = '/auth/google';
+  };
+</script>

@@ -1,0 +1,7 @@
+{
+  "gameTitle": "Orian",
+  "defaultRoom": "square",
+  "admins": ["Admin", "Ahmed"],
+  "adminCharacterId": null,
+  "adminCharacterNum": null
+}

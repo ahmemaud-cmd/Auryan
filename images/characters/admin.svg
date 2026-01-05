@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="100%" height="100%" rx="8" fill="#0b1320"/>
+  <circle cx="32" cy="22" r="10" fill="#facc15"/>
+  <rect x="16" y="34" width="32" height="18" rx="4" fill="#f97316"/>
+  <polygon points="32,6 26,18 38,18" fill="#ffd700" />
+  <text x="32" y="58" font-size="8" text-anchor="middle" fill="#000">АДМ</text>
+</svg>

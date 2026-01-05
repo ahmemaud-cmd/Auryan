@@ -1,0 +1,50 @@
+{
+  "characters": [
+    {
+      "id": "boy",
+      "name": "ولد",
+      "gender": "male",
+      "skins": [
+        { "id": "light", "name": "فاتح", "img": "images/characters/boy_skin_light.svg" },
+        { "id": "dark", "name": "أسمر", "img": "images/characters/boy_skin_dark.svg" }
+      ],
+      "hairstyles": [
+        { "id": "short", "name": "قصير", "img": "images/characters/boy_hair_short.svg" },
+        { "id": "spiky", "name": "شائك", "img": "images/characters/boy_hair_spiky.svg" }
+      ],
+      "outfits": [
+        { "id": "jacket", "name": "جاكيت", "img": "images/characters/boy_outfit_jacket.svg", "duration": 3600 }
+      ]
+    },
+    {
+      "id": "girl",
+      "name": "بنت",
+      "gender": "female",
+      "skins": [
+        { "id": "light", "name": "فاتح", "img": "images/characters/girl_skin_light.svg" },
+        { "id": "dark", "name": "أسمر", "img": "images/characters/girl_skin_dark.svg" }
+      ],
+      "hairstyles": [
+        { "id": "long", "name": "طويل", "img": "images/characters/girl_hair_long.svg" },
+        { "id": "bun", "name": "كعكة", "img": "images/characters/girl_hair_bun.svg" }
+      ],
+      "outfits": [
+        { "id": "dress", "name": "فستان", "img": "images/characters/girl_outfit_dress.svg", "duration": 86400 }
+      ]
+    },
+    {
+      "id": "admin",
+      "name": "أدمن",
+      "skins": [ { "id": "default", "name": "أدمن", "img": "images/characters/admin.svg" } ],
+      "outfits": []
+    },
+    {
+      "id": "admin_1111111111",
+      "name": "مالك",
+      "num": 1111111111,
+      "hideFromSelection": true,
+      "skins": [ { "id": "default", "name": "المالك", "img": "images/characters/admin.svg" } ],
+      "outfits": []
+    }
+  ]
+}
